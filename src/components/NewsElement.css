@@ -1,0 +1,51 @@
+.newsDiv {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+    padding: 10px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+
+.newsDiv img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: blueviolet
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
