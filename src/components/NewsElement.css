@@ -50,4 +50,6 @@ a {
     background-color: blueviolet;
 }
 
-a:hover {}
+a:hover {
+    background-color: blue;
+}
