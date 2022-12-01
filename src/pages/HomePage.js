@@ -32,8 +32,10 @@ function HomePage() {
         <main>
             <div className="headerDiv">
                 <h1>Super News</h1>
-                <input onChange={(e) => setSearch(e.target.value)} placeholder="Search"></input>
-                <button onClick={(e) => { setnews([]); setapi(`https://newsapi.org/v2/everything?q=${search}&from=2022-12-01&sortBy=popularity&apiKey=a44950ea0b844b928c2605c2d8c45b4f`); setnews([]); }}>Suchen</button>
+                <div><input onChange={(e) => setSearch(e.target.value)} placeholder="Search"></input>
+                    <button onClick={(e) => { setnews([]); setapi(`https://newsapi.org/v2/everything?q=${search}&from=2022-12-01&sortBy=popularity&apiKey=a44950ea0b844b928c2605c2d8c45b4f`); setnews([]); }}>Search</button>
+                </div>
+
                 <select onChange={(e) => { setCountry(e.target.value); setapi(`http://newsapi.org/v2/top-headlines?country=${country}&apiKey=a44950ea0b844b928c2605c2d8c45b4f`); }}>
                     <option value="de" >Germany</option>
                     <option value="us">America</option>
