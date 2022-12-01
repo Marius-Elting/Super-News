@@ -49,3 +49,5 @@ a {
     border-radius: 10px;
     background-color: blueviolet;
 }
+
+a:hover {}
